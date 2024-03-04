@@ -38,7 +38,7 @@ jobs:
           testflight_expiration_warning \
           # Submodule G7SensorKit patches:
           # G7SensorKit: G7Sensor.swift: 218
-          curl https://github.com/kstompel/G7SensorKitk/commit/e4c95e95369920cedcc010bc61a98a6bbad3e64b.patch | git apply -v --directory= G7SensorKit
+          curl https://github.com/kstompel/G7SensorKitk/commit/e4c95e95369920cedcc010bc61a98a6bbad3e64b.patch | git apply -v --directory=G7SensorKit
  
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
