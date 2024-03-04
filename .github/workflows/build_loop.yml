@@ -31,10 +31,7 @@ jobs:
        
        # Customize Loop: Download and apply patches
       - name: Customize Loop
-        run: |
-          # Submodule LoopKit patches:
-          # LoopKit: Filename: customization details
-          curl https://github.com/kstompel/G7SensorKitk/commit/e4c95e95369920cedcc010bc61a98a6bbad3e64b.patch | git apply -v --directory=LoopKit
+        run: curl https://github.com/kstompel/G7SensorKitk/commit/e4c95e95369920cedcc010bc61a98a6bbad3e64b.patch | git apply -v --directory=LoopKit
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
